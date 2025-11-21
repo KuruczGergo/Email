@@ -43,7 +43,10 @@ namespace Email
                             Console.WriteLine($"{sorszam++} {e_mail}");
                         }
                         break;
-                    case "2": Console.WriteLine("Új e-mailek");break;
+                    case "2": Console.WriteLine("Adja meg az új e-mail címet");
+                        String uj = Console.ReadLine();
+                        e_mailok.Add(uj);
+                        break;
                     case "3": Console.WriteLine("E-mailek törlése"); break;
                     case "4": Console.WriteLine("Érvényes e-mailek listázása"); break;
                     default: Console.Clear(); Console.WriteLine("Rossz parancs"); break;
